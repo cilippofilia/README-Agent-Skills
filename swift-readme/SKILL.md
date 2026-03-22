@@ -7,7 +7,7 @@ description: "Use when the user asks to write, rewrite, improve, or restyle a RE
 
 This is the Codex adapter for the repository's shared README playbook.
 
-Keep this file thin. The reusable guidance lives in `../../core/`.
+Keep this file thin. The reusable guidance lives in `../core/`.
 
 ## Codex workflow
 
@@ -15,7 +15,7 @@ Keep this file thin. The reusable guidance lives in `../../core/`.
 2. Read the current `README.md` if it exists.
 3. Inspect the real project context: manifests, entry points, source tree, tests, docs, assets, examples, and license files.
 4. Verify claims against the codebase. Never invent features, setup steps, compatibility, screenshots, links, or translations.
-5. Load the matching file from `../../core/`.
+5. Load the matching file from `../core/`.
 6. Draft or rewrite the README around the fastest path to reader understanding.
 7. If multiple topics apply, load only the additional core files you need.
 
@@ -23,7 +23,7 @@ Keep this file thin. The reusable guidance lives in `../../core/`.
 
 ### 1) App or product README
 
-Read [../../core/apps.md](../../core/apps.md).
+Read [../core/apps.md](../core/apps.md).
 
 Use for:
 
@@ -33,7 +33,7 @@ Use for:
 
 ### 2) Package, library, framework, or SDK README
 
-Read [../../core/packages.md](../../core/packages.md).
+Read [../core/packages.md](../core/packages.md).
 
 Use for:
 
@@ -43,7 +43,7 @@ Use for:
 
 ### 3) CLI, internal tool, automation, or utility README
 
-Read [../../core/tools.md](../../core/tools.md).
+Read [../core/tools.md](../core/tools.md).
 
 Use for:
 
@@ -55,7 +55,7 @@ Use for:
 
 ### 4) Visual placement or demo decisions
 
-Read [../../core/visual-assets.md](../../core/visual-assets.md) when:
+Read [../core/visual-assets.md](../core/visual-assets.md) when:
 
 - the repo contains screenshots, videos, GIFs, sample output, or demos
 - the README would be clearer with visual proof
@@ -63,7 +63,7 @@ Read [../../core/visual-assets.md](../../core/visual-assets.md) when:
 
 ### 5) Rewrite-heavy cleanup
 
-Read [../../core/rewrites.md](../../core/rewrites.md) when:
+Read [../core/rewrites.md](../core/rewrites.md) when:
 
 - an existing README is bloated, stale, duplicated, or poorly ordered
 - the user wants a rewrite rather than a new draft
@@ -71,7 +71,7 @@ Read [../../core/rewrites.md](../../core/rewrites.md) when:
 
 ### 6) Multilingual or license-sensitive README work
 
-Read [../../core/special-cases.md](../../core/special-cases.md) when:
+Read [../core/special-cases.md](../core/special-cases.md) when:
 
 - the user asks for translated README support
 - translated README files already exist
@@ -80,7 +80,7 @@ Read [../../core/special-cases.md](../../core/special-cases.md) when:
 
 ### 7) Contributor guidance or attribution
 
-Read [../../core/contributors.md](../../core/contributors.md) when:
+Read [../core/contributors.md](../core/contributors.md) when:
 
 - the user asks for a `Contributing` section
 - the user asks for a `Contributors` section
@@ -88,18 +88,18 @@ Read [../../core/contributors.md](../../core/contributors.md) when:
 
 ## Codex-specific notes
 
-- Install this adapter by copying `codex/swift-readme/` into `~/.codex/skills/`.
+- Install this adapter by copying `swift-readme/` into `~/.codex/skills/`.
 - Trigger it with `$swift-readme` or by asking Codex to use the `swift-readme` skill.
-- Treat `../../core/` as the source of truth for README guidance.
+- Treat `../core/` as the source of truth for README guidance.
 - Do not duplicate shared guidance in this adapter unless Codex-specific behavior requires it.
 
 ## Shared contract
 
-Follow the contract described in [../../core/OVERVIEW.md](../../core/OVERVIEW.md):
+Follow the contract described in [../core/OVERVIEW.md](../core/OVERVIEW.md):
 
 - inspect real repo context first
 - identify the repo type
 - load only the relevant core guidance
 - avoid invented claims, assets, and links
 - recommend visuals only when justified
-- include contributor sections only when relevant and verified
+- include contributor sections only when relevant and verified, using git-derived names and avatars when available

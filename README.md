@@ -7,7 +7,8 @@ This repository is now structured as a model-agnostic core plus thin platform ad
 ## Architecture
 
 - `core/` is the source of truth for reusable README guidance
-- `codex/` contains the Codex-specific adapter
+- `swift-readme/` is the Codex-specific adapter
+- `claude/` contains the Claude Code adapter
 - future adapters such as Claude or generic prompt packs can be added without duplicating the core guidance
 
 ## Repository Structure
@@ -24,9 +25,10 @@ README-Agent-Skills/
 │   ├── special-cases.md
 │   ├── tools.md
 │   └── visual-assets.md
-└── codex/
-    └── swift-readme/
-        └── SKILL.md
+├── claude/
+│   └── CLAUDE.md
+└── swift-readme/
+    └── SKILL.md
 ```
 
 ## Core Contract
@@ -49,7 +51,7 @@ The current adapter is `swift-readme` for Codex.
 Install it by copying the adapter folder into your Codex skills directory:
 
 ```bash
-cp -R codex/swift-readme ~/.codex/skills/
+cp -R swift-readme ~/.codex/skills/
 ```
 
 In Codex, trigger it with:
@@ -63,6 +65,23 @@ Or ask for it in natural language, for example:
 - `Use the swift-readme skill to rewrite this app README.`
 - `Use the swift-readme skill to improve this package README.`
 - `Use the swift-readme skill to add contributor guidance and keep the license section accurate.`
+
+## Using With Claude Code
+
+Claude Code uses a project-level `CLAUDE.md` file for repository instructions.
+
+This repo now includes a Claude adapter at [claude/CLAUDE.md](claude/CLAUDE.md). You can use it in either of these ways:
+
+1. Copy [claude/CLAUDE.md](claude/CLAUDE.md) into your target repository as `CLAUDE.md` and keep the `core/` folder alongside it.
+2. Import it from your target repository's root `CLAUDE.md` using an absolute path to your local clone of this playbook repo.
+
+Example import:
+
+```md
+@/absolute/path/to/README-Agent-Skills/claude/CLAUDE.md
+```
+
+The Claude adapter follows the same core contract as the Codex adapter and routes into the shared guidance under [core/](core/).
 
 ## Current Coverage
 
@@ -90,7 +109,7 @@ What to contribute:
 Where to contribute:
 
 - update files in [core/](core/) for reusable README guidance
-- update [codex/swift-readme/SKILL.md](codex/swift-readme/SKILL.md) only for Codex-specific behavior
+- update [swift-readme/SKILL.md](swift-readme/SKILL.md) only for Codex-specific behavior
 - update [README.md](README.md) when the repository structure or positioning changes
 
 Why contribute:
