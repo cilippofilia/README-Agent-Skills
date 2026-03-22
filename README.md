@@ -103,4 +103,8 @@ Keep edits factual, concise, and aligned with the shared contract in `core/OVERV
 
 ## Contributors
 
-- Filippo Cilia
+<a href="https://github.com/cilippofilia">
+  <img src="https://github.com/cilippofilia.png" width="72" alt="Filippo Cilia" />
+</a>
+
+- [Filippo Cilia](https://github.com/cilippofilia)

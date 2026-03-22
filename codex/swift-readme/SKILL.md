@@ -102,4 +102,4 @@ Follow the contract described in [../../core/OVERVIEW.md](../../core/OVERVIEW.md
 - load only the relevant core guidance
 - avoid invented claims, assets, and links
 - recommend visuals only when justified
-- include contributor sections only when relevant and verified
+- include contributor sections only when relevant and verified, using git-derived names and avatars when available
