@@ -37,7 +37,7 @@ Keep it practical. Prefer concrete contribution targets over generic “PRs welc
 `## Contributing`
 
 - improve routing logic in `SKILL.md`
-- refine topic guidance in `references/`
+- refine topic guidance in `core/`
 - tighten examples and reduce unsupported claims
 
 `## Contributors`
