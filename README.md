@@ -58,7 +58,3 @@ Or call it in natural language, for example:
 - choosing section order based on repo type
 - avoiding invented features or stale claims
 - borrowing good README patterns without copying blindly
-
-## Inspiration
-
-This repository structure and README pacing were inspired by [twostraws/SwiftUI-Agent-Skill](https://github.com/twostraws/SwiftUI-Agent-Skill), adapted here for a README-focused Codex skill repository.
