@@ -25,15 +25,15 @@ README-Agent-Skills/
 ├── skills/
 │   └── swift-readme/
 │       └── SKILL.md
-├── core/
-│   ├── OVERVIEW.md
-│   ├── apps.md
-│   ├── contributors.md
-│   ├── packages.md
-│   ├── rewrites.md
-│   ├── special-cases.md
-│   ├── tools.md
-│   └── visual-assets.md
+└── core/
+    ├── OVERVIEW.md
+    ├── apps.md
+    ├── contributors.md
+    ├── packages.md
+    ├── rewrites.md
+    ├── special-cases.md
+    ├── tools.md
+    └── visual-assets.md
 ```
 
 ## Core Contract
