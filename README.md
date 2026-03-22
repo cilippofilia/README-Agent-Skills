@@ -100,7 +100,3 @@ Why contribute:
 - to make the playbook easier to extend to Claude and other runtimes later
 
 Keep edits factual, concise, and aligned with the shared contract in `core/OVERVIEW.md`.
-
-## Contributors
-
-- Filippo Cilia
