@@ -10,22 +10,22 @@ This adapter assumes the reusable guidance lives in the sibling `core/` director
 2. Identify the repo type: app, package, library, SDK, CLI, internal tool, template, or mixed.
 3. Read the current `README.md` if it exists.
 4. Keep claims grounded in project files. Do not invent features, setup steps, compatibility, assets, links, translations, or contributor identities.
-5. Read the relevant file from `../core/` before drafting.
+5. Read the relevant file from `core/` before drafting.
 6. Read additional core files only when the task requires them.
 
 ## Decision tree
 
-- For apps and products, read `../core/apps.md`.
-- For packages, libraries, frameworks, and SDKs, read `../core/packages.md`.
-- For CLIs, scripts, generators, and internal tools, read `../core/tools.md`.
-- For visual placement, screenshots, GIFs, videos, or sample output, read `../core/visual-assets.md`.
-- For rewriting a stale or bloated README, read `../core/rewrites.md`.
-- For contributor guidance or attribution, read `../core/contributors.md`.
-- For multilingual or license-sensitive work, read `../core/special-cases.md`.
+- For apps and products, read `core/apps.md`.
+- For packages, libraries, frameworks, and SDKs, read `core/packages.md`.
+- For CLIs, scripts, generators, and internal tools, read `core/tools.md`.
+- For visual placement, screenshots, GIFs, videos, or sample output, read `core/visual-assets.md`.
+- For rewriting a stale or bloated README, read `core/rewrites.md`.
+- For contributor guidance or attribution, read `core/contributors.md`.
+- For multilingual or license-sensitive work, read `core/special-cases.md`.
 
 ## Shared contract
 
-Follow the shared rules in `../core/OVERVIEW.md`:
+Follow the shared rules in `core/OVERVIEW.md`:
 
 - inspect the real repo first
 - identify the repo type
@@ -39,4 +39,4 @@ Follow the shared rules in `../core/OVERVIEW.md`:
 
 - Claude Code loads a project `CLAUDE.md` automatically when started in a repository.
 - Keep this adapter concise so it remains effective as project memory.
-- If you want to reuse this playbook from another repository, either copy this file into that repository as `CLAUDE.md` along with the `core/` folder, or import it from that repository's root `CLAUDE.md`.
+- For reusable Claude skill installation, use `.claude/skills/swift-readme/`.
