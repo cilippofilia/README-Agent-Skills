@@ -54,7 +54,7 @@ See [core/OVERVIEW.md](core/OVERVIEW.md) for the shared rules.
 This repository now exposes its Codex skill from the standard `skills/` discovery path, so it can be installed directly with the Skills CLI:
 
 ```bash
-npx skills add filippocilia/README-Agent-Skills --skill swift-readme
+npx skills add cilippofilia/README-Agent-Skills --skill swift-readme
 ```
 
 That matches the repository layout expected by `npx skills` for GitHub-hosted skill repos.
