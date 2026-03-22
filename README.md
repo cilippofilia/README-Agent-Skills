@@ -15,6 +15,7 @@ Use this skill when you want Codex to:
 - keep README claims grounded in actual project files
 - handle multilingual README layouts when requested
 - handle MIT-style README license sections when requested
+- detect where a screenshot, GIF, video, or sample output would improve the README
 
 The skill lives in [`swift-readme/SKILL.md`](swift-readme/SKILL.md).
 
@@ -57,6 +58,7 @@ Or call it in natural language, for example:
 - keeping setup steps executable and minimal
 - choosing section order based on repo type
 - avoiding invented features or stale claims
+- recommending visuals only when they clarify the reader journey
 - borrowing good README patterns without copying blindly
 
 ## Inspiration
