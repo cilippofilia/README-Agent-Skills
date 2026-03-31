@@ -8,6 +8,7 @@ Use this reference for user-facing apps and products.
 2. Show the product early when visual proof matters.
 3. Make major user-facing benefits obvious before technical depth.
 4. Document platform requirements and setup accurately.
+5. Surface verified platform support near the top when deployment targets or toolchain versions are explicit.
 
 ## Recommended section order
 
@@ -27,15 +28,20 @@ Do not force every section. Small app repos often need fewer sections.
 ## What good app READMEs do
 
 - Open with a short value proposition, not a long backstory.
+- Use a polished top block when available: image or logo above the title, then concise platform and contact badges.
 - Show the UI near the top when the product experience matters.
 - Explain what a new user can do with the app.
 - Keep setup steps focused on getting the app running.
 - Move architecture below the first-run path.
+- Derive Apple platform badges from real deployment targets or manifest metadata when available.
 
 ## Visual guidance
 
 For apps, check whether the README should include:
 
+- a centered hero image or logo above the title
+- support badges for verified Apple platform or runtime coverage
+- a contact badge when the maintainer handle or support URL is verified
 - a hero screenshot below `About`
 - a small gallery after `Features`
 - a short demo GIF in `Usage`

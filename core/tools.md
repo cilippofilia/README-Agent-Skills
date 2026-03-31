@@ -29,6 +29,7 @@ Use this reference for CLIs, generators, scripts, automation, internal tools, an
 - Include runnable commands.
 - Show expected output, files created, or resulting state.
 - Keep operational warnings close to the commands they affect.
+- Put verified runtime or platform support near the top when the repo makes it explicit.
 
 ## Visual guidance
 

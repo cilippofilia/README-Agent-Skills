@@ -15,9 +15,11 @@ Keep this file thin. The reusable guidance lives in `../../core/`.
 2. Read the current `README.md` if it exists.
 3. Inspect the real project context: manifests, entry points, source tree, tests, docs, assets, examples, and license files.
 4. Verify claims against the codebase. Never invent features, setup steps, compatibility, screenshots, links, or translations.
-5. Load the matching file from `../../core/`.
-6. Draft or rewrite the README around the fastest path to reader understanding.
-7. If multiple topics apply, load only the additional core files you need.
+5. When supported versions are explicit in manifests or project settings, include support badges by default near the top of the README.
+6. When a missing asset or enhancement would materially improve the README, leave a hidden guidance comment using exactly `[//]: # (...)` above the relevant section.
+7. Load the matching file from `../../core/`.
+8. Draft or rewrite the README around the fastest path to reader understanding.
+9. If multiple topics apply, load only the additional core files you need.
 
 ## Workflow decision tree
 
@@ -60,6 +62,7 @@ Read [../../core/visual-assets.md](../../core/visual-assets.md) when:
 - the repo contains screenshots, videos, GIFs, sample output, or demos
 - the README would be clearer with visual proof
 - you need to recommend a missing asset without inventing it
+- you need to decide whether a logo or pill should sit above the title or inline with it
 
 ### 5) Rewrite-heavy cleanup
 
@@ -92,6 +95,7 @@ Read [../../core/contributors.md](../../core/contributors.md) when:
 - Trigger it with `$swift-readme` or by asking Codex to use the `swift-readme` skill.
 - Treat `../../core/` as the source of truth for README guidance.
 - Do not duplicate shared guidance in this adapter unless Codex-specific behavior requires it.
+- For hidden README guidance, always use the exact syntax `[//]: # (...)`.
 
 ## Shared contract
 
