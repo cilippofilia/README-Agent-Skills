@@ -18,8 +18,7 @@ Use this reference for packages, libraries, frameworks, SDKs, and reusable modul
 - Examples
 - Requirements or Compatibility
 - Project Structure or Concepts
-- Contributing
-- Contributors or License
+- License
 
 For package repos, quick start usually matters more than a long feature list.
 
@@ -53,10 +52,3 @@ Use [header.md](header.md) for header composition. Use [visual-assets.md](visual
 - Treating low-level implementation details as onboarding content
 - Adding screenshots where code would be clearer
 - Inventing compatibility claims or package manager instructions
-
-## Contributor sections
-
-Package READMEs often benefit from explicit contribution guidance. When supported by the repo, add:
-
-- a `Contributing` section that explains what kinds of contributions are useful, where contributors should edit, and why those areas matter
-- a `Contributors` section near the bottom when contributor names are verified from the repository

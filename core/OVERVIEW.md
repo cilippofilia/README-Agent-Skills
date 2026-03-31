@@ -13,10 +13,9 @@ Every adapter should follow the same behavior:
 3. Load only the relevant core guidance.
 4. Keep claims grounded in actual project files.
 5. Recommend visuals only when they materially improve clarity.
-6. Add `Contributing` and `Contributors` only when relevant and verified.
-7. Use `header.md` for top-of-README policy, including hero images, support badges, contact badges, and hidden improvement comments.
-8. Include support badges by default when platform, language, or toolchain versions are explicit in a high-confidence source.
-9. Use hidden improvement comments selectively with the exact `[//]: # (...)` syntax only when missing assets or proof materially hurt clarity or trust.
+6. Use `header.md` for top-of-README policy, including hero images, support badges, contact badges, and hidden improvement comments.
+7. Include support badges by default when platform, language, or toolchain versions are explicit in a high-confidence source.
+8. Use hidden improvement comments selectively with the exact `[//]: # (...)` syntax only when missing assets or proof materially hurt clarity or trust.
 
 ## Core files
 
@@ -27,7 +26,6 @@ Every adapter should follow the same behavior:
 - `visual-assets.md` for screenshots, GIFs, videos, diagrams, and sample output
 - `examples.md` for canonical README top-section examples
 - `rewrites.md` for cleanup and restructuring of existing READMEs
-- `contributors.md` for contribution guidance and contributor attribution
 - `special-cases.md` for multilingual and license-sensitive work
 
 ## Authoring rule

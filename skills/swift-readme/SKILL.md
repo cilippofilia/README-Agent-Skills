@@ -82,15 +82,7 @@ Read [../../core/special-cases.md](../../core/special-cases.md) when:
 - the user asks for a specific license section style
 - the repo has a license file that the README should reflect
 
-### 7) Contributor guidance or attribution
-
-Read [../../core/contributors.md](../../core/contributors.md) when:
-
-- the user asks for a `Contributing` section
-- the user asks for a `Contributors` section
-- you need to decide whether contributor guidance should be included
-
-### 8) Header composition or canonical examples
+### 7) Header composition or canonical examples
 
 Read [../../core/header.md](../../core/header.md) when:
 
@@ -123,4 +115,3 @@ Follow the contract described in [../../core/OVERVIEW.md](../../core/OVERVIEW.md
 - recommend visuals only when justified
 - include support badges from high-confidence sources by default
 - use hidden comments selectively, not as routine polish
-- include contributor sections only when relevant and verified, using git-derived names and avatars when available

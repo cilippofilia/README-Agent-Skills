@@ -20,8 +20,7 @@ Use this reference for user-facing apps and products.
 - Requirements
 - Getting Started
 - Project Structure or Architecture
-- Contributing, if relevant
-- Support, Contributors, Author, or License
+- Support, Author, or License
 
 Do not force every section. Small app repos often need fewer sections.
 
@@ -56,10 +55,3 @@ Use [header.md](header.md) for the top block and [visual-assets.md](visual-asset
 - Hiding requirements too far down
 - Using visuals as decoration instead of proof
 - Inventing screenshots, stores, demos, or supported platforms
-
-## Contributor sections
-
-If the repo is open to community or team updates, include:
-
-- a `Contributing` section that explains what kinds of changes are useful, where to make them, and why they matter
-- a `Contributors` section near the bottom when names can be verified from the repo or provided by the user

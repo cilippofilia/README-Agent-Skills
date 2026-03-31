@@ -18,8 +18,6 @@ Use this reference for CLIs, generators, scripts, automation, internal tools, an
 - Usage
 - Sample output or result
 - Operational notes
-- Contributing, if relevant
-- Contributors, if available
 - Project Structure, if useful
 
 ## What good tool READMEs do
@@ -51,10 +49,3 @@ Use [header.md](header.md) for badges, contact metadata, and hidden comments nea
 - Hiding success criteria after long prose
 - Using screenshots when terminal output would be clearer
 - Writing operational notes too far from the relevant commands
-
-## Contributor sections
-
-For tools and automation repos, add:
-
-- a `Contributing` section that explains what workflows or guidance contributors can improve, where those changes belong, and why they are valuable
-- a `Contributors` section near the bottom when contributor information can be verified

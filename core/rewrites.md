@@ -26,7 +26,6 @@ Use this reference when improving an existing README instead of drafting from sc
 
 - “Modern, scalable, robust” with no evidence
 - architecture before purpose
-- long contributor-centric sections near the top
 - setup instructions that do not match project files
 - screenshots or demo links mentioned but not actually present
 

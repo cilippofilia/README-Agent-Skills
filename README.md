@@ -2,7 +2,7 @@
 
 Reusable README-writing guidance for AI agents.
 
-This repository is structured as a model-agnostic core plus thin platform adapters. The shared guidance covers app READMEs, package READMEs, tool READMEs, top-of-README composition, support badge policy, selective hidden improvement comments, visual recommendations, rewrite cleanup, contributor sections, and special cases such as multilingual docs and license-aware sections.
+This repository is structured as a model-agnostic core plus thin platform adapters. The shared guidance covers app READMEs, package READMEs, tool READMEs, top-of-README composition, support badge policy, selective hidden improvement comments, visual recommendations, rewrite cleanup, and special cases such as multilingual docs and license-aware sections.
 
 ## Architecture
 
@@ -28,7 +28,6 @@ README-Agent-Skills/
 └── core/
     ├── OVERVIEW.md
     ├── apps.md
-    ├── contributors.md
     ├── examples.md
     ├── header.md
     ├── packages.md
@@ -49,7 +48,6 @@ All adapters should follow the same contract:
 - recommend visuals only when they materially improve clarity
 - include support badges from high-confidence project metadata by default
 - use `[//]: # (...)` comments selectively when missing assets or proof materially hurt clarity
-- add `Contributing` and `Contributors` only when relevant and verified
 
 See [core/OVERVIEW.md](core/OVERVIEW.md) for the shared rules.
 
@@ -83,7 +81,7 @@ Or ask for it in natural language, for example:
 
 - `Use the swift-readme skill to rewrite this app README.`
 - `Use the swift-readme skill to improve this package README.`
-- `Use the swift-readme skill to add contributor guidance and keep the license section accurate.`
+- `Use the swift-readme skill to keep the license section accurate and improve the README structure.`
 
 ## Why This Layout
 
@@ -113,5 +111,4 @@ The core playbook currently includes guidance for:
 - screenshots, GIFs, videos, diagrams, and sample output
 - canonical README header examples for app, package, and CLI repos
 - rewriting bloated or stale READMEs
-- `Contributing` and `Contributors` sections
 - multilingual and license-sensitive README work
