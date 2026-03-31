@@ -138,3 +138,7 @@ The core playbook currently includes guidance for:
 - canonical README header examples for app, package, and CLI repos
 - rewriting bloated or stale READMEs
 - multilingual and license-sensitive README work
+
+## License
+
+[MIT](LICENSE)
