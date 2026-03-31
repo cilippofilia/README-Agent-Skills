@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/swift-readme-hero.svg" alt="Swift README hero image" width="72%" />
+</p>
+
 # README Agent Playbook
 
 Reusable README-writing guidance for AI agents.
