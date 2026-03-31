@@ -97,7 +97,12 @@ python3 skills/swift-readme/scripts/readme_intake.py update
 python3 skills/swift-readme/scripts/readme_intake.py template
 ```
 
+Use `create` for net-new README work or when the existing README is too weak to preserve.
+Use `update` for diagnosis, cleanup, or rewrites of an existing README.
+Use `template` when you want a fill-in Markdown brief instead of interactive prompts.
+
 Bare `readme_intake.py` defaults to `create`, and `--template` remains supported as a compatibility alias.
+The skill also includes [skills/swift-readme/references/intake-template.md](/Users/filippocilia/Desktop/Projects/Packages/README-Agent-Skills/skills/swift-readme/references/intake-template.md) as a static fallback.
 
 ## Why This Layout
 
