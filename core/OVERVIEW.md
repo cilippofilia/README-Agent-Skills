@@ -14,12 +14,14 @@ Every adapter should follow the same behavior:
 4. Keep claims grounded in actual project files.
 5. Recommend visuals only when they materially improve clarity.
 6. Use `header.md` for top-of-README policy, including hero images, support badges, contact badges, and hidden improvement comments.
-7. Include support badges by default when platform, language, or toolchain versions are explicit in a high-confidence source.
-8. Use hidden improvement comments selectively with the exact `[//]: # (...)` syntax only when missing assets or proof materially hurt clarity or trust.
+7. Use `intake.md` when repo inspection leaves the README direction, audience, or purpose unclear.
+8. Include support badges by default when platform, language, or toolchain versions are explicit in a high-confidence source.
+9. Use hidden improvement comments selectively with the exact `[//]: # (...)` syntax only when missing assets or proof materially hurt clarity or trust.
 
 ## Core files
 
 - `header.md` for top-of-README composition, badge policy, contact badges, and hidden comments
+- `intake.md` for staged README questioning and intake briefs when repo context is insufficient
 - `apps.md` for user-facing apps and products
 - `packages.md` for packages, libraries, frameworks, and SDKs
 - `tools.md` for CLIs, generators, scripts, and internal tools

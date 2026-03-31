@@ -15,12 +15,14 @@ Keep this file thin. The reusable guidance lives in `../../core/`.
 2. Read the current `README.md` if it exists.
 3. Inspect the real project context: manifests, entry points, source tree, tests, docs, assets, examples, and license files.
 4. Verify claims against the codebase. Never invent features, setup steps, compatibility, screenshots, links, or translations.
-5. When supported versions are explicit in high-confidence project metadata, include support badges by default near the top of the README.
-6. When a missing asset or proof materially hurts clarity or trust, leave a hidden guidance comment using exactly `[//]: # (...)` above the relevant section.
-7. Read `../../core/header.md` whenever you are shaping the top of the README, deciding badge policy, or considering hidden improvement comments.
-8. Load the matching file from `../../core/`.
-9. Draft or rewrite the README around the fastest path to reader understanding.
-10. If multiple topics apply, load only the additional core files you need.
+5. If repo type, audience, purpose, or primary user journey are still unclear after inspection, read `../../core/intake.md` and gather only the smallest missing set of answers.
+6. When intake is needed, use `scripts/readme_intake.py create` for new README work, `scripts/readme_intake.py update` for rewrite or cleanup work, or `scripts/readme_intake.py template` for a fill-in template.
+7. When supported versions are explicit in high-confidence project metadata, include support badges by default near the top of the README.
+8. When a missing asset or proof materially hurts clarity or trust, leave a hidden guidance comment using exactly `[//]: # (...)` above the relevant section.
+9. Read `../../core/header.md` whenever you are shaping the top of the README, deciding badge policy, or considering hidden improvement comments.
+10. Load the matching file from `../../core/`.
+11. Draft or rewrite the README around the fastest path to reader understanding.
+12. If multiple topics apply, load only the additional core files you need.
 
 ## Workflow decision tree
 
@@ -82,7 +84,43 @@ Read [../../core/special-cases.md](../../core/special-cases.md) when:
 - the user asks for a specific license section style
 - the repo has a license file that the README should reflect
 
-### 7) Header composition or canonical examples
+### 7) Intake for ambiguous repos
+
+Read [../../core/intake.md](../../core/intake.md) when:
+
+- repo inspection is not enough to classify the repo confidently
+- the audience or purpose of the README is still unclear
+- the repo looks like an agent skill, template, docs repo, or mixed repo
+- the current README is too weak to explain who the document is for
+
+Use `scripts/readme_intake.py` when:
+
+- you want an interactive Markdown intake brief
+- you need a deterministic brief shape for follow-up README work
+
+Use `scripts/readme_intake.py create` when:
+
+- there is no README yet
+- the current README is too weak to preserve
+- the task is effectively greenfield README creation
+
+Use `scripts/readme_intake.py update` when:
+
+- the repo already has a README
+- the task is diagnosis, cleanup, or rewrite
+- you need to capture what must stay and what is wrong today
+
+Use `scripts/readme_intake.py template` when:
+
+- you want a non-interactive fill-in brief
+- the user should answer the template directly
+
+Use [references/intake-template.md](references/intake-template.md) when:
+
+- the user would benefit from filling in a lightweight template directly
+- you want a static fallback instead of running the script
+
+### 8) Header composition or canonical examples
 
 Read [../../core/header.md](../../core/header.md) when:
 
@@ -94,7 +132,7 @@ Read [../../core/header.md](../../core/header.md) when:
 Read [../../core/examples.md](../../core/examples.md) when:
 
 - you want a canonical example of a polished README top section
-- you need a short model for an Apple app, package, or CLI README
+- you need a short model for an Apple app, package, CLI, or intake-driven README flow
 
 ## Codex-specific notes
 
@@ -103,6 +141,8 @@ Read [../../core/examples.md](../../core/examples.md) when:
 - Treat `../../core/` as the source of truth for README guidance.
 - Do not duplicate shared guidance in this adapter unless Codex-specific behavior requires it.
 - For hidden README guidance, always use the exact syntax `[//]: # (...)`.
+- Bare `scripts/readme_intake.py` defaults to the `create` flow for compatibility.
+- Use `scripts/readme_intake.py --template` or `scripts/readme_intake.py template` when you need a fill-in intake brief without interactive prompts.
 
 ## Shared contract
 
@@ -113,5 +153,6 @@ Follow the contract described in [../../core/OVERVIEW.md](../../core/OVERVIEW.md
 - load only the relevant core guidance
 - avoid invented claims, assets, and links
 - recommend visuals only when justified
+- use staged intake only when repo inspection leaves important README direction unclear
 - include support badges from high-confidence sources by default
 - use hidden comments selectively, not as routine polish

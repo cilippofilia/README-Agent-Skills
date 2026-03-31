@@ -62,3 +62,43 @@ shotsync sync --input ./build/shots --output ./metadata/en-US
 ````
 
 Use hidden comments sparingly. This pattern is appropriate when the README is clear, but a missing proof artifact would materially improve trust.
+
+## Intake brief example
+
+```md
+# README Intake Brief
+
+## Repo Type
+
+- Type: agent-skill
+- Confidence: User-provided
+- Description: Installable skill, agent playbook, or AI workflow bundle
+
+## Audience
+
+- Primary reader: Agent users who want to install and trigger the skill correctly
+- Secondary reader: Maintainers refining the skill
+
+## Purpose
+
+- Why this repo exists: It packages reusable README-writing guidance for agent runtimes
+- Immediate message: This skill helps an agent inspect a repo and produce an accurate README without inventing claims
+```
+
+Use this style when the repo is ambiguous enough that the agent needs explicit intent before writing.
+
+## Intake create command example
+
+```bash
+python3 skills/swift-readme/scripts/readme_intake.py create
+```
+
+Use `create` for net-new README work or when the existing README is too weak to preserve.
+
+## Intake update command example
+
+```bash
+python3 skills/swift-readme/scripts/readme_intake.py update
+```
+
+Use `update` when the repository already has a README and the main task is diagnosis, cleanup, or rewriting.

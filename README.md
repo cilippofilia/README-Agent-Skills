@@ -2,7 +2,7 @@
 
 Reusable README-writing guidance for AI agents.
 
-This repository is structured as a model-agnostic core plus thin platform adapters. The shared guidance covers app READMEs, package READMEs, tool READMEs, top-of-README composition, support badge policy, selective hidden improvement comments, visual recommendations, rewrite cleanup, and special cases such as multilingual docs and license-aware sections.
+This repository is structured as a model-agnostic core plus thin platform adapters. The shared guidance covers app READMEs, package READMEs, tool READMEs, staged intake for ambiguous repos, top-of-README composition, support badge policy, selective hidden improvement comments, visual recommendations, rewrite cleanup, and special cases such as multilingual docs and license-aware sections.
 
 ## Architecture
 
@@ -24,12 +24,17 @@ README-Agent-Skills/
 ├── README.md
 ├── skills/
 │   └── swift-readme/
-│       └── SKILL.md
+│       ├── SKILL.md
+│       ├── references/
+│       │   └── intake-template.md
+│       └── scripts/
+│           └── readme_intake.py
 └── core/
     ├── OVERVIEW.md
     ├── apps.md
     ├── examples.md
     ├── header.md
+    ├── intake.md
     ├── packages.md
     ├── rewrites.md
     ├── special-cases.md
@@ -46,6 +51,7 @@ All adapters should follow the same contract:
 - load only the relevant core guidance
 - avoid invented claims, assets, and links
 - recommend visuals only when they materially improve clarity
+- use staged intake only when repo inspection leaves important README direction unclear
 - include support badges from high-confidence project metadata by default
 - use `[//]: # (...)` comments selectively when missing assets or proof materially hurt clarity
 
@@ -83,6 +89,16 @@ Or ask for it in natural language, for example:
 - `Use the swift-readme skill to improve this package README.`
 - `Use the swift-readme skill to keep the license section accurate and improve the README structure.`
 
+The installable skill also ships a README intake helper:
+
+```bash
+python3 skills/swift-readme/scripts/readme_intake.py create
+python3 skills/swift-readme/scripts/readme_intake.py update
+python3 skills/swift-readme/scripts/readme_intake.py template
+```
+
+Bare `readme_intake.py` defaults to `create`, and `--template` remains supported as a compatibility alias.
+
 ## Why This Layout
 
 The `npx skills` CLI looks for skills in standard repository locations such as `skills/` and `.agents/skills/`. Keeping the installable adapter in `skills/swift-readme/` makes this repo align with the broader Agent Skills ecosystem and avoids depending on recursive fallback discovery.
@@ -108,6 +124,7 @@ The core playbook currently includes guidance for:
 - packages, libraries, frameworks, and SDKs
 - CLIs, scripts, generators, and internal tools
 - top-of-README composition for hero images, badges, contact links, and selective hidden comments
+- staged intake for ambiguous repos, mixed repos, and agent-skill repos
 - screenshots, GIFs, videos, diagrams, and sample output
 - canonical README header examples for app, package, and CLI repos
 - rewriting bloated or stale READMEs
