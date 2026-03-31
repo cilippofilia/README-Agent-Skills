@@ -2,7 +2,7 @@
 
 Reusable README-writing guidance for AI agents.
 
-This repository is structured as a model-agnostic core plus thin platform adapters. The shared guidance covers app READMEs, package READMEs, tool READMEs, visual recommendations, rewrite cleanup, contributor sections, and special cases such as multilingual docs and license-aware sections.
+This repository is structured as a model-agnostic core plus thin platform adapters. The shared guidance covers app READMEs, package READMEs, tool READMEs, top-of-README composition, support badge policy, selective hidden improvement comments, visual recommendations, rewrite cleanup, contributor sections, and special cases such as multilingual docs and license-aware sections.
 
 ## Architecture
 
@@ -29,6 +29,8 @@ README-Agent-Skills/
     ├── OVERVIEW.md
     ├── apps.md
     ├── contributors.md
+    ├── examples.md
+    ├── header.md
     ├── packages.md
     ├── rewrites.md
     ├── special-cases.md
@@ -45,6 +47,8 @@ All adapters should follow the same contract:
 - load only the relevant core guidance
 - avoid invented claims, assets, and links
 - recommend visuals only when they materially improve clarity
+- include support badges from high-confidence project metadata by default
+- use `[//]: # (...)` comments selectively when missing assets or proof materially hurt clarity
 - add `Contributing` and `Contributors` only when relevant and verified
 
 See [core/OVERVIEW.md](core/OVERVIEW.md) for the shared rules.
@@ -105,7 +109,9 @@ The core playbook currently includes guidance for:
 - apps and products
 - packages, libraries, frameworks, and SDKs
 - CLIs, scripts, generators, and internal tools
+- top-of-README composition for hero images, badges, contact links, and selective hidden comments
 - screenshots, GIFs, videos, diagrams, and sample output
+- canonical README header examples for app, package, and CLI repos
 - rewriting bloated or stale READMEs
 - `Contributing` and `Contributors` sections
 - multilingual and license-sensitive README work
@@ -118,7 +124,7 @@ What to contribute:
 
 - clearer shared guidance in `core/`
 - better adapter boundaries so platform-specific wrappers stay minimal
-- stronger rewrite heuristics, contributor guidance, or visual-placement guidance
+- stronger rewrite heuristics, contributor guidance, header composition rules, or visual-placement guidance
 - new adapters that consume the core contract without duplicating it
 
 Where to contribute:

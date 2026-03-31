@@ -10,7 +10,7 @@ Use this reference when improving an existing README instead of drafting from sc
 4. Tighten copy so it sounds intentional rather than templated.
 5. Re-check every claim against the repository.
 6. Check whether visuals or sample output should be added or recommended.
-7. Add hidden improvement comments where the README clearly needs assets or proof that cannot be produced from the repo as-is.
+7. Add hidden improvement comments only where a missing asset or proof materially hurts clarity or trust.
 
 ## Typical rewrite fixes
 
@@ -20,7 +20,7 @@ Use this reference when improving an existing README instead of drafting from sc
 - Collapse duplicated sections.
 - Convert long prose into clearer headings and shorter lists.
 - Remove unsupported claims and stale setup steps.
-- Add `[//]: # (...)` comments above weak sections that would materially improve with a hero image, video, screenshot, or diagram.
+- Add selective `[//]: # (...)` comments above sections that materially need a hero image, video, screenshot, or diagram.
 
 ## Smells to remove
 
@@ -39,3 +39,4 @@ Before finishing, confirm that:
 - technical depth appears after basic orientation
 - every section earns its place
 - any hidden improvement comments use the exact `[//]: # (...)` syntax and point to concrete upgrades
+- header composition follows `header.md` rather than ad hoc top-of-file rules

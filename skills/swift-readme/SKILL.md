@@ -15,11 +15,12 @@ Keep this file thin. The reusable guidance lives in `../../core/`.
 2. Read the current `README.md` if it exists.
 3. Inspect the real project context: manifests, entry points, source tree, tests, docs, assets, examples, and license files.
 4. Verify claims against the codebase. Never invent features, setup steps, compatibility, screenshots, links, or translations.
-5. When supported versions are explicit in manifests or project settings, include support badges by default near the top of the README.
-6. When a missing asset or enhancement would materially improve the README, leave a hidden guidance comment using exactly `[//]: # (...)` above the relevant section.
-7. Load the matching file from `../../core/`.
-8. Draft or rewrite the README around the fastest path to reader understanding.
-9. If multiple topics apply, load only the additional core files you need.
+5. When supported versions are explicit in high-confidence project metadata, include support badges by default near the top of the README.
+6. When a missing asset or proof materially hurts clarity or trust, leave a hidden guidance comment using exactly `[//]: # (...)` above the relevant section.
+7. Read `../../core/header.md` whenever you are shaping the top of the README, deciding badge policy, or considering hidden improvement comments.
+8. Load the matching file from `../../core/`.
+9. Draft or rewrite the README around the fastest path to reader understanding.
+10. If multiple topics apply, load only the additional core files you need.
 
 ## Workflow decision tree
 
@@ -62,7 +63,7 @@ Read [../../core/visual-assets.md](../../core/visual-assets.md) when:
 - the repo contains screenshots, videos, GIFs, sample output, or demos
 - the README would be clearer with visual proof
 - you need to recommend a missing asset without inventing it
-- you need to decide whether a logo or pill should sit above the title or inline with it
+- you need to decide where non-header media should sit in the README
 
 ### 5) Rewrite-heavy cleanup
 
@@ -89,6 +90,20 @@ Read [../../core/contributors.md](../../core/contributors.md) when:
 - the user asks for a `Contributors` section
 - you need to decide whether contributor guidance should be included
 
+### 8) Header composition or canonical examples
+
+Read [../../core/header.md](../../core/header.md) when:
+
+- you need to decide whether a logo or pill should sit above the title
+- you need to source support badges from project metadata
+- you need to decide whether a contact badge is justified
+- you need to decide whether a hidden improvement comment should appear
+
+Read [../../core/examples.md](../../core/examples.md) when:
+
+- you want a canonical example of a polished README top section
+- you need a short model for an Apple app, package, or CLI README
+
 ## Codex-specific notes
 
 - Install this skill with `npx skills add <repo> --skill swift-readme`, or copy `skills/swift-readme/` into your Codex skills directory manually.
@@ -106,4 +121,6 @@ Follow the contract described in [../../core/OVERVIEW.md](../../core/OVERVIEW.md
 - load only the relevant core guidance
 - avoid invented claims, assets, and links
 - recommend visuals only when justified
+- include support badges from high-confidence sources by default
+- use hidden comments selectively, not as routine polish
 - include contributor sections only when relevant and verified, using git-derived names and avatars when available

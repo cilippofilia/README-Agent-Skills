@@ -26,7 +26,7 @@ For package repos, quick start usually matters more than a long feature list.
 ## What good package READMEs do
 
 - Include copy-pasteable install instructions.
-- Use a compact top block when it adds clarity: brand image above the title, then verified compatibility badges.
+- Use `header.md` when the package README needs a top block with brand or compatibility context.
 - Show the first successful usage path near the top.
 - Explain what problem the package solves for developers.
 - Use examples that map to real API entry points.
@@ -44,7 +44,7 @@ Many package READMEs do not need screenshots. Prefer:
 - diagrams only when they simplify a non-obvious concept
 - sample output when the package generates artifacts or console output
 
-Use [visual-assets.md](visual-assets.md) only when a visual genuinely explains the package faster than text or code.
+Use [header.md](header.md) for header composition. Use [visual-assets.md](visual-assets.md) only when a non-header visual genuinely explains the package faster than text or code.
 
 ## Common mistakes
 

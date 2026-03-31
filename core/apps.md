@@ -28,7 +28,7 @@ Do not force every section. Small app repos often need fewer sections.
 ## What good app READMEs do
 
 - Open with a short value proposition, not a long backstory.
-- Use a polished top block when available: image or logo above the title, then concise platform and contact badges.
+- Use `header.md` when shaping the top block of the README.
 - Show the UI near the top when the product experience matters.
 - Explain what a new user can do with the app.
 - Keep setup steps focused on getting the app running.
@@ -47,7 +47,7 @@ For apps, check whether the README should include:
 - a short demo GIF in `Usage`
 - a video link when the flow is too long or rich for a GIF
 
-Use [visual-assets.md](visual-assets.md) for format and placement rules.
+Use [header.md](header.md) for the top block and [visual-assets.md](visual-assets.md) for screenshots, GIFs, videos, and placement rules below the header.
 
 ## Common mistakes
 

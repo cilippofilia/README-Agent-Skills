@@ -30,6 +30,7 @@ Use this reference for CLIs, generators, scripts, automation, internal tools, an
 - Show expected output, files created, or resulting state.
 - Keep operational warnings close to the commands they affect.
 - Put verified runtime or platform support near the top when the repo makes it explicit.
+- Prefer code blocks and sample output over decorative visuals.
 
 ## Visual guidance
 
@@ -41,7 +42,7 @@ For tools, prefer textual proof first:
 
 Use GIFs or videos only when interaction, progress, or a UI state change is central to understanding the tool.
 
-Use [visual-assets.md](visual-assets.md) when deciding between output blocks and media.
+Use [header.md](header.md) for badges, contact metadata, and hidden comments near the top. Use [visual-assets.md](visual-assets.md) when deciding between output blocks and non-header media.
 
 ## Common mistakes
 
